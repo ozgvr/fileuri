@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Explicit hover rules for desktop webviews where utility hover variants may be gated */
+.row-hover:hover {
+  background-color: rgba(229, 231, 235, 0.40);
+}
+
+.row-hover:hover > td {
+  background-color: rgba(229, 231, 235, 0.40);
+}
+
+.nav-hover:hover {
+  background-color: rgba(209, 213, 219, 0.40);
+}
+
+.subnav-hover:hover {
+  background-color: rgba(209, 213, 219, 0.40);
+  color: rgba(31, 41, 55);
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.pathLink {
+  color: rgb(59, 130, 246);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.pathLink:hover {
+  color: rgb(37, 99, 235);
+}
+
+.sidebarSurface {
+  background-color: rgba(243, 244, 246, 0.85);
+}
+
+.pagerBtn {
+  cursor: pointer;
+}
+
+.pagerBtn:hover {
+  background-color: rgba(243, 244, 246, 0.9);
+}
+
+.dialogBtn {
+  cursor: pointer;
+}
+
+.dialogBtn:hover {
+  background-color: rgba(243, 244, 246, 0.9);
+}
+
+.dialogBtnDanger {
+  cursor: pointer;
+}
+
+.dialogBtnDanger:hover {
+  background-color: rgba(254, 242, 242, 0.95);
+}
+
+.dialogBtnPrimary {
+  cursor: pointer;
+}
+
+.dialogBtnPrimary:hover {
+  background-color: rgb(37, 99, 235);
+}
+
+.sidebarAddBtn {
+  cursor: pointer;
+}
+
+.sidebarAddBtn:hover {
+  background-color: rgb(37, 99, 235);
+}
+
+.tagCard {
+  cursor: pointer;
+}
+
+.tagCard:hover {
+  background-color: rgba(243, 244, 246, 0.9);
+  border-color: rgba(209, 213, 219, 0.95);
+}
+
+.tagAddBtn {
+  cursor: pointer;
+}
+
+.tagAddBtn:hover {
+  background-color: rgba(243, 244, 246, 0.9);
+}
